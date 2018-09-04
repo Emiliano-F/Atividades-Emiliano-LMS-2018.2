@@ -77,7 +77,10 @@ input{
     background-color: rgb(50, 50, 50);
     border: none;
     color: white;
-    
 }
 
+#butao{
+    padding: 3px 20px;
+    font-size: 15px
+}
 
