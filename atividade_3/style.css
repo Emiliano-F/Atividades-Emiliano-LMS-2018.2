@@ -1,0 +1,83 @@
+body{
+    background-color: lightgray;
+    margin: 0px 10em;
+}
+
+.cabecalho{
+    background-color: rgb(60, 60, 60);
+    margin: 0px; padding: 20px 20px;
+    font-size: 4vw;
+}
+
+#titulo{
+    background-color: rgb(88, 88, 88);
+    color: red; font-size: 2vw;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+#navegador{
+    background-color: rgb(88, 88, 88);
+    margin: 0px; padding: 10px 0px;
+    font-size: 18px;
+}
+h2{
+    text-align: center;
+    font-size: 2em;
+    color: rgb(212, 25, 25)
+    
+}
+h3{
+    text-align: center;
+    font-size: 1em;
+    text-decoration: underline;
+    color: rgb(104, 16, 16)
+}
+
+p{
+    text-align: center;
+    padding: 0px 6vw
+}
+
+a{
+    text-decoration: none;
+    color: black; margin: 0px;
+    padding: 10px 20px;
+    border-right: 1px solid black;
+}
+
+article{
+    margin: 0px
+}
+.form{
+    padding: 50px;
+    font-size: 20px;
+    background-color: rgb(88, 88, 88);
+    border: 2px solid black;
+    border-bottom: none;
+}
+#caixa-1{
+    border: 1vh double black;
+    margin-bottom: 2em;
+    padding: 2em
+}
+#caixa-2{
+    border: 1vh dashed rgb(138, 138, 138);
+    margin-bottom: 2em;
+    padding: 2em
+}
+
+#caixa-3{
+    border: 1vh inset rgb(255, 255, 255);
+    margin-bottom: 2em;
+    padding: 2em
+}
+
+input{
+    background-color: rgb(50, 50, 50);
+    border: none;
+    color: white;
+    
+}
+
+
