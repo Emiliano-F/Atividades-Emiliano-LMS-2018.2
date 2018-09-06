@@ -9,13 +9,6 @@ body{
     font-size: 4vw;
 }
 
-#titulo{
-    background-color: rgb(88, 88, 88);
-    color: red; font-size: 2vw;
-    padding: 20px;
-    border-bottom: 1px solid black;
-}
-
 #navegador{
     background-color: rgb(88, 88, 88);
     margin: 0px; padding: 10px 0px;
