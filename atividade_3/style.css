@@ -1,42 +1,59 @@
 body{
-    background-color: lightgray;
-    margin: 0px 10em;
+    background-image: url("./gradient.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e2e2e2;
+    margin: 0 10em; /*-- acima, a imagem cobre todo o corpo da página */
 }
 
 .cabecalho{
     background-color: rgb(60, 60, 60);
-    margin: 0px; padding: 20px 20px;
+    margin: 0px;
+    text-align: center;
+    padding: 20px 20px;
     font-size: 4vw;
 }
 
 #navegador{
     background-color: rgb(88, 88, 88);
-    margin: 0px; padding: 10px 0px;
+    margin: 0px;
+    padding: 10px 0px;
     font-size: 18px;
+    text-align: center;
+    border: black 1px solid;
 }
+
+
 h2{
     text-align: center;
     font-size: 2em;
     color: rgb(212, 25, 25)
     
 }
+
 h3{
     text-align: center;
     font-size: 1em;
+    font-family: Arial, SansSerif;
     text-decoration: underline;
     color: rgb(104, 16, 16)
 }
 
 p{
+    font-size: 17px;
     text-align: center;
-    padding: 0px 6vw
+    padding: 0 6vw
 }
 
 a{
     text-decoration: none;
     color: black; margin: 0px;
     padding: 10px 20px;
-    border-right: 1px solid black;
+}
+
+a:hover{
+    color: #e2e2e2;
+    text-decoration: underline;
 }
 
 article{
