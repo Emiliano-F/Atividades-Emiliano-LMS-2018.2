@@ -10,15 +10,42 @@
         *{
             margin: 0px;
             padding: 0px;
+            font-family: consolas, monospace;
+            font-weight: normal;
+        }
+        body{
+            background-color:rgb(20, 20, 20);
         }
         .cabecalho{
-            width: 100%;
-            background-color: grey;
+            width: auto;
             padding: 10px 15px;
+            border-left: 7px orange solid;
         }
         .cabecalho h1{
+            font-size: 40px;
+            text-decoration: none;
+            color: rgb(170, 170, 170);
+        }
+        .conteudo ul{
+            padding: 0px 0px;
             font-size: 20px;
         }
+        .conteudo ul li{
+            width: auto;
+            padding: 5px 0px 10px 20px;
+            margin: 10px 0px 10px 30px;
+            border-left: 5px orange solid;
+            list-style: none;
+        }
+
+        #lista a{
+            text-decoration: none;
+            color: rgb(170, 170, 170);
+        }
+        #lista a:hover{
+            text-decoration: underline;
+        }
+
     </style>    
 </head>
 <body>
@@ -26,10 +53,10 @@
         <h1>Atividades de LMS - Emiliano Feitosa</h1>
     </div>
     <div class="conteudo">
-        <ul>
-            <li><a href="./atividade_1/atividade_01.html" target="_blank" rel="noopener noreferrer">Atividade 1</a></li>
-            <li><a href="./atividade_2/index.html" target="_blank" rel="noopener noreferrer">Atividade 2</a></li>
-            <li><a href="./atividade_3/index.html" target="_blank" rel="noopener noreferrer">Atividade 3</a></li>
+        <ul id="lista">
+            <li><a href="./atividade_1/atividade_01.html" target="_blank" title="Atividade 1">Atividade 1</a></li>
+            <li><a href="./atividade_2/index.html" target="_blank" title="Atividade 2">Atividade 2</a></li>
+            <li><a href="./atividade_3/index.html" target="_blank" title="Atividade 3">Atividade 3</a></li>
         </ul>
     </div>
 </body>
