@@ -6,6 +6,7 @@
     <title>Link com as atividades</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="shorcut icon" type="image/png" href="https://stickeroid.com/uploads/pic/fx0n217l-full/28d1532ca38b7d0b86755b5a2435f8442eeb68e8.png">
     <style>
         *{
             margin: 0px;
@@ -21,29 +22,40 @@
             padding: 10px 15px;
             border-left: 7px orange solid;
         }
+
+
         .cabecalho h1{
             font-size: 40px;
             text-decoration: none;
             color: rgb(170, 170, 170);
+            animation-name: pulse;
         }
-        .conteudo ul{
+
+        #lista{
             padding: 0px 0px;
             font-size: 20px;
         }
-        .conteudo ul li{
-            width: auto;
-            padding: 5px 0px 10px 20px;
-            margin: 10px 0px 10px 30px;
-            border-left: 5px orange solid;
-            list-style: none;
-        }
 
-        #lista a{
+        #lista a {
             text-decoration: none;
             color: rgb(170, 170, 170);
+            display: block;
+            width: auto;
+            padding: 7px 0px 15px 20px;
+            margin-top: 10px;
+            margin-right: 0px;
+            margin-bottom: 10px;
+            margin-left: 30px;
+            border-left: 5px orange solid;
+            list-style: none;
+            transition: margin-left 500ms, border-left-color 500ms, border-left-width 500ms;
         }
         #lista a:hover{
             text-decoration: underline;
+            background-color: #3c3c3c;
+            margin-left: 40px;
+            border-left-color: #a60000;
+            border-left-width: 10px;
         }
 
     </style>    
