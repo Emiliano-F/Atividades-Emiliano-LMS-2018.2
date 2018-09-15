@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: "fontawesome";
+    src: url("fonts/fontawesome.woff") format("woff");
+
+}
+.canecalho{
+    margin-top: 6px;
+    padding: 8px 16px;
+}
+
+.logo{
+    margin: 4px 0px 6px 0px;
+    width: 50%;
+    float: left;
+    display: block;
+}
+.w3s-logo {
+    font-family: fontawesome;
+    font-size: 37px;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 3px;
+    color: #555555;
+}
+.w3s-logo .poncoton{
+    color: #4CAF50;
+}
+.slogan{
+    font-family:  Arial, sans-serif;
+    margin-top: 16px;
+    width: 49%;
+    float: left;
+    letter-spacing: 4px;
+    display: block;
+    color: black;
+}
+.barra{
+    display: block;
+    font-family: Arial, sans-serif;
+    position: relative;
+    font-size: 17px;
+    color: white;
+    background-color: #4CAF50;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16),
+    0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    overflow: hidden;
+    letter-spacing: 3px;
+    box-sizing: inherit;
+
+}
+.barra .item{
+    white-space: normal;
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
