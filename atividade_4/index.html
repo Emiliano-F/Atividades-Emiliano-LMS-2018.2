@@ -5,7 +5,12 @@
     <title>Atividade 4 - Emiliano</title>
     <link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        //Para ficar um pouquinho bonitinho eu utilizei um pouco de javascript :)
+        function mostrar(){
+            document.getElementById("cascata").classList.toggle("show");
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -20,23 +25,20 @@
 
             </div>
         </div>
-
-    </header>
-    <nav>
         <div class="barra sombra-card">
-            <a class="item w3-botao">
-                TUTORIAIS <span class="butao"></span>
+            <a class="item w3-botao" onclick="mostrar()">
+                TUTORIAIS
             </a>
             <a class="item w3-botao">
-                REFERÊNCIAS<span class="butao"></span>
+                REFERÊNCIAS
             </a>
             <a class="item w3-botao">
-                EXEMPLOS<span class="butao"></span>
+                EXEMPLOS
             </a>
         </div>
-    </nav>
-    <nav class="dropdown-menu sombra-card">
-        <span class="fechar w3-botao">X</span><br>
+
+    </header>
+    <nav id="cascata" class="dropdown-menu sombra-card">
         <div class="quadro">
             <div class="coluna">
                 <h3 class="coluna-in-quadro">HTML e CSS</h3>

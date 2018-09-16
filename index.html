@@ -48,14 +48,28 @@
             margin-left: 30px;
             border-left: 5px orange solid;
             list-style: none;
-            transition: margin-left 500ms, border-left-color 500ms, border-left-width 500ms;
+            transition: margin-left 200ms, border-left-color 200ms, border-left-width 200ms;
         }
         #lista a:hover{
-            text-decoration: underline;
             background-color: #3c3c3c;
             margin-left: 40px;
             border-left-color: #a60000;
             border-left-width: 10px;
+        }
+        .desc{
+            visibility: hidden;
+            margin: 0;
+            opacity: 0;
+            height: 0px;
+            font-size: 15px;
+            transition: visibility 200ms, opacity 200ms, margin-bottom 200ms, padding-left 200ms;
+        }
+        #lista a:hover .desc{
+            visibility: visible;
+            opacity: 1;
+            color: rgb(170, 170, 170);
+            margin-bottom: 30px;
+            padding-left: 30px;
         }
 
     </style>    
@@ -66,10 +80,14 @@
     </div>
     <div class="conteudo">
         <ul id="lista">
-            <li><a href="./atividade_1/atividade_01.html" target="_blank" title="Atividade 1">Atividade 1</a></li>
-            <li><a href="./atividade_2/index.html" target="_blank" title="Atividade 2">Atividade 2</a></li>
-            <li><a href="./atividade_3/index.html" target="_blank" title="Atividade 3">Atividade 3</a></li>
-            <li><a href="./atividade_4/index.html" target="blank" title="Atividade 4">Atividade 4</a></li>
+            <li><a href="./atividade_1/atividade_01.html" target="_blank" title="Atividade 1">Atividade 1
+                <p class="desc">Inserir descrição</p></a></li>
+            <li><a href="./atividade_2/index.html" target="_blank" title="Atividade 2">Atividade 2
+                <p class="desc">Inserir descrição</p></a></li>
+            <li><a href="./atividade_3/index.html" target="_blank" title="Atividade 3">Atividade 3
+                <p class="desc">Inserir descrição</p></a></li>
+            <li><a href="./atividade_4/index.html" target="blank" title="Atividade 4">Atividade 4
+                <p class="desc">Inserir descrição</p></a></li>
         </ul>
     </div>
 </body>
