@@ -7,17 +7,23 @@
     src: url("fonts/fontawesome.woff") format("woff");
 
 }
-.canecalho{
+div{
+    display: block;
+}
+
+.cabecalho{
     margin-top: 6px;
-    padding: 8px 16px;
+    padding: 8px 16px 10px 16px;
 }
 
 .logo{
     margin: 4px 0px 6px 0px;
+    padding-bottom: 16px;
     width: 50%;
     float: left;
     display: block;
 }
+
 .w3s-logo {
     font-family: fontawesome;
     font-size: 37px;
@@ -33,11 +39,15 @@
 .slogan{
     font-family:  Arial, sans-serif;
     margin-top: 16px;
-    width: 49%;
+    width: 50%;
     float: left;
     letter-spacing: 4px;
     display: block;
     color: black;
+}
+.sombra-card{
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16),
+    0px 2px 10px 0px rgba(0, 0, 0, 0.12);
 }
 .barra{
     display: block;
@@ -46,14 +56,13 @@
     font-size: 17px;
     color: white;
     background-color: #4CAF50;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16),
-    0px 2px 10px 0px rgba(0, 0, 0, 0.12);
     width: 100%;
     overflow: hidden;
     letter-spacing: 3px;
     box-sizing: inherit;
 
 }
+
 .barra .item{
     white-space: normal;
     padding: 8px 16px;
@@ -62,4 +71,96 @@
     display: block;
     padding-top: 16px;
     padding-bottom: 16px;
+}
+
+.w3-botao{
+    background: inherit;
+    cursor: pointer;
+    overflow: hidden;
+}
+.w3-botao:hover{;
+    background-color: white;
+    color: black;
+}
+
+.barra-lateral{
+    display: block;
+    width: 250px;
+    position: absolute;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    height: 100%;
+}
+
+.cabeca-secao{
+    display: table;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 10px 0px;
+    padding: 0.01em 16px;
+}
+
+.item-lateral{
+    font-size: 16px;
+    display: block;
+    padding: 0px 0px 0px 16px;
+    text-align: left;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+}
+.item-lateral:hover{
+    background-color: #b1b1b1;
+    cursor: pointer;
+}
+.dropdown-menu{
+    padding-bottom: 40px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    color: black;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    display: block;
+}
+
+.item:hover .dropdown-menu{
+    display: none;
+}
+
+.quadro{
+    display: block;
+    padding: 0px 8px;
+}
+
+.coluna{
+    padding: 0px 8px;
+    width: 25%;
+    float: left;
+}
+.fechar{
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px 16px;
+}
+
+.coluna-in-quadro{
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.item-in-quadro{
+    color: black;
+    text-decoration: none;
+    padding: 3px 0;
+    margin: 10px 5px 10px 0;
+    font-size: 16px;
+    width: 100%;
 }
