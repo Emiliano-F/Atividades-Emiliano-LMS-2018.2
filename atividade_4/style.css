@@ -31,7 +31,6 @@ div{
     font-size: 37px;
     text-decoration: none;
     line-height: 1;
-    -webkit-font-smoothing: antialiased;
     letter-spacing: 3px;
     color: #555555;
 }
@@ -57,15 +56,14 @@ div{
 
 .barra{
     display: block;
+    overflow: hidden;
     font-family: Arial, sans-serif;
     position: relative;
     font-size: 17px;
     color: white;
     background-color: #4CAF50;
     width: 100%;
-    overflow: hidden;
     letter-spacing: 3px;
-    box-sizing: inherit;
 
 }
 
@@ -73,7 +71,6 @@ div{
     white-space: normal;
     padding: 8px 16px;
     float: left;
-    width: auto;
     display: block;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -82,10 +79,9 @@ div{
 .w3-botao{
     background: inherit;
     cursor: pointer;
-    overflow: hidden;
 }
 
-.w3-botao:hover{;
+.w3-botao:hover{
     background-color: white;
     color: black;
 }
@@ -101,7 +97,6 @@ div{
 }
 
 .cabeca-secao{
-    display: table;
     font-family: Arial, sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -114,7 +109,6 @@ div{
     display: block;
     padding: 0px 0px 0px 16px;
     text-align: left;
-    overflow: hidden;
     text-decoration: none;
     color: black;
 }
@@ -130,7 +124,7 @@ div{
     width: 100%;
     z-index: 10;
     color: black;
-    background-color: #f2f2f2;
+    background-color: #d1d1d1;
     font-family: Arial, sans-serif;
     display: none;
 }
@@ -139,7 +133,7 @@ div{
 
 .quadro{
     display: block;
-    padding: 0px 8px;
+    padding: 5px 20px;
 }
 
 .coluna{
