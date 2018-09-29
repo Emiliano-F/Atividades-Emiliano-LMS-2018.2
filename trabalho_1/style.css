@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(58, 58, 58);
 }
 .sombra{
     box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 1);
@@ -12,8 +12,9 @@ body{
     float: left;
     box-sizing: border-box;
     width: 100%;
-    padding: 10px 0px 5px 15px;
+    padding: 10px 0px 2px 15px;
     border-top-left-radius: 15px;
+    background-color: rgb(26, 26, 26);
 }
 
 .nome{
@@ -24,6 +25,7 @@ body{
     font-size: 50px;
 }
 .subtitulo{
+    margin: 0px;
     padding-bottom: 0px;
     box-sizing: border-box;
     width: 100%;
@@ -31,4 +33,67 @@ body{
     font-size: 16px;
     color: grey
 }
+.menu-superior{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    padding: 0px 40px;
+    background-color: rgb(15, 15, 15);
+    align-content: center;
+}
+.link span{
+    display: block;
+    float: left;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid transparent;
+    transition: border 100ms, padding 100ms;
+}
+.link:hover span{
+    border-bottom: 3px solid orange;
+    cursor: default;
+}
+.conteudo-dropdown{
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 47px;
+    padding-bottom: 25px;
+    background-color:rgb(105, 105, 105);
+    width: 37%;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    box-shadow: inset  0px 1px 10px rgb(15, 15, 15);
+    transition: visibility 1s;
+}
+.link:hover > .conteudo-dropdown{
+    display: block;
+    visibility: visible;
+}
 
+.menu-dropdown {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    padding:0px; 
+}
+.op{
+    display: block;
+    text-decoration: none;
+    color:  black;
+    padding: 10px 5px 5px 5px;
+    font-size: 17px;
+    transition: background-color 150ms, border-left 150ms;
+}
+.op:hover{
+    background-color: grey;
+    border-left: 5px solid orange;
+    transition: background-color 150ms, border-left 150ms;
+}

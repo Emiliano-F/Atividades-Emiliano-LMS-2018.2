@@ -36,7 +36,7 @@
             font-size: 20px;
         }
 
-        #lista a {
+        #lista .atividade {
             text-decoration: none;
             color: rgb(170, 170, 170);
             display: block;
@@ -50,7 +50,8 @@
             list-style: none;
             transition: margin-left 200ms, border-left-color 200ms, border-left-width 200ms;
         }
-        #lista a:hover{
+
+        #lista .atividade:hover{
             background-color: #3c3c3c;
             margin-left: 40px;
             border-left-color: #a60000;
@@ -64,7 +65,34 @@
             font-size: 15px;
             transition: visibility 200ms, opacity 200ms, margin-bottom 200ms, padding-left 200ms;
         }
-        #lista a:hover .desc{
+        #lista .atividade:hover .desc{
+            visibility: visible;
+            opacity: 1;
+            color: rgb(170, 170, 170);
+            margin-bottom: 30px;
+            padding-left: 30px;
+        }
+        #lista .trabalho {
+            text-decoration: none;
+            color: rgb(170, 170, 170);
+            display: block;
+            width: auto;
+            padding: 7px 0px 15px 20px;
+            margin-top: 10px;
+            margin-right: 0px;
+            margin-bottom: 10px;
+            margin-left: 30px;
+            border-left: 5px  rgb(0, 0, 204) solid;
+            list-style: none;
+            transition: margin-left 200ms, border-left-color 200ms, border-left-width 200ms;
+        }
+        #lista .trabalho:hover{
+            background-color: #3c3c3c;
+            margin-left: 40px;
+            border-left-color: white;
+            border-left-width: 10px;
+        }
+        #lista .trabalho:hover .desc{
             visibility: visible;
             opacity: 1;
             color: rgb(170, 170, 170);
@@ -76,17 +104,20 @@
 </head>
 <body>
     <div class="cabecalho">
-        <h1>Atividades de LMS - Emiliano Feitosa</h1>
+        <h1>Atividades e trabalhos de LMS - Emiliano Feitosa</h1>
     </div>
     <div class="conteudo">
         <ul id="lista">
-            <li><a href="./atividade_1/atividade_01.html" target="_blank" title="Atividade 1">Atividade 1
+            <li><a href="./atividade_1/atividade_01.html" class="atividade" target="_blank" title="Atividade 1">Atividade 1
                 <p class="desc">Inserir descrição</p></a></li>
-            <li><a href="./atividade_2/index.html" target="_blank" title="Atividade 2">Atividade 2
+            <li><a href="./atividade_2/index.html" class="atividade" target="_blank" title="Atividade 2">Atividade 2
                 <p class="desc">Inserir descrição</p></a></li>
-            <li><a href="./atividade_3/index.html" target="_blank" title="Atividade 3">Atividade 3
+            <li><a href="./atividade_3/index.html" class="atividade" target="_blank" title="Atividade 3">Atividade 3
                 <p class="desc">Inserir descrição</p></a></li>
-            <li><a href="./atividade_4/index.html" target="blank" title="Atividade 4">Atividade 4
+            <li><a href="./atividade_4/index.html" class="atividade" target="blank" title="Atividade 4">Atividade 4
+                <p class="desc">Inserir descrição</p></a></li>
+                
+            <li><a href="./trabalho_1/index.html" class="trabalho" target="blank" title="Trabalho 1">Trabalho 1
                 <p class="desc">Inserir descrição</p></a></li>
         </ul>
     </div>
