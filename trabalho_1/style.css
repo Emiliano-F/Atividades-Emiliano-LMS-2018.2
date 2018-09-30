@@ -8,7 +8,8 @@ body{
 
 .logo{
     /* caixa com o nome */
-    display: block;
+    display: flex;
+    flex-direction: row;
     float: left;
     box-sizing: border-box;
     width: 100%;
@@ -18,7 +19,6 @@ body{
 }
 
 .nome{
-    /* classe nome */
     color: rgb(158, 158, 158);
     text-decoration: none;
     font-family: consolas, monospace;
@@ -37,11 +37,16 @@ body{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: stretch;
     padding: 0px 10px;
     background-color: rgb(15, 15, 15);
-    align-content: center;
     z-index: 100;
+}
+.link{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: fit-content;
+    height: fit-content;
 }
 .link span{
     display: block;
@@ -65,7 +70,7 @@ body{
     margin-top: 46.06px;
     padding-bottom: 25px;
     background-color:rgb(105, 105, 105);
-    width: 37%;
+    width: 400px;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
     max-height: 0;
@@ -94,7 +99,7 @@ body{
 .op{
     display: block;
     text-decoration: none;
-    color:  black;
+    color: black;
     padding: 14px 0px 5px 5px;
     font-size: 17px;
     transition: background-color 200ms, border-left 200ms;
@@ -119,6 +124,7 @@ body{
     color: grey;
     margin-top: 2px;
     box-sizing: border-box;
+    transition: width 240ms, height 240ms;
 }
 .menu-lateral-direito{
     display: block;
@@ -127,7 +133,8 @@ body{
     background: linear-gradient(rgb(36, 36, 36), rgb(65, 65, 65));
     color: grey;
     margin-top: 2px;
-    box-sizing: border-box
+    box-sizing: border-box;
+    transition: width 240ms, height 240ms;
 }
 .conteudo{
     list-style-type: none;
@@ -195,4 +202,24 @@ body{
     height: 100%;
     color: blue;
     font-family: monospace;
+}
+
+@media screen and (max-width: 600px){
+    .menu-superior{
+        justify-content: center;
+    }
+    .menu-lateral-esquerdo{
+        width: 100%;
+        height: 200px;
+    }
+    .menu-lateral-direito{
+        width: 100%;
+        height: 200px;
+    }
+    .logo{
+        justify-content: center;
+    }
+    .corpo{
+        justify-content: center;
+    }
 }
