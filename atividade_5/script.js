@@ -1,9 +1,8 @@
 
 // funcao de adicionar classes ao clicar no botao
+var on = false; //botão ativado ou não
 
-var on = false;
-
-function change() {
+function onClickChange() {
     var menu = document.querySelector(".menu-lateral");
     var botao = document.querySelector(".botao-menu");
     var titulo = document.querySelector(".titulo-site");
@@ -24,8 +23,20 @@ function change() {
     }
     on = true;
 }
+
+//aumantar a altura de maneira suave
 function height(x) {
     var elem = document.querySelector("#t" + x);
     elem.classList.toggle("altura");
 }
-var tela = window.matchMedia("max-width")
+
+//função para resolver o problema do titulo desaparecido depois de ativar o botão do menu e aumentar a tela
+var x = window.matchMedia("(max-width: 480px)");
+changeTitulo(x);
+x.addListener(changeTitulo);function changeTitulo(x) {
+    if (x.matches && on) { 
+        document.querySelector(".titulo-site").style.display = "none";
+    } else {
+        document.querySelector(".titulo-site").style.display = "block";
+    }
+}
