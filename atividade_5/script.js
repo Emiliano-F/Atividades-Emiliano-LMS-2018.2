@@ -9,7 +9,6 @@ function change() {
     var titulo = document.querySelector(".titulo-site");
     var fundo = document.querySelector(".fundo");
     menu.classList.toggle("margem-zero");
-    //menu.style.marginLeft = "0px"
     botao.style.marginLeft = "250px";
     titulo.style.display = "none";
     fundo.style.display = "block";
@@ -29,3 +28,4 @@ function height(x) {
     var elem = document.querySelector("#t" + x);
     elem.classList.toggle("altura");
 }
+var tela = window.matchMedia("max-width")
