@@ -28,7 +28,6 @@ body{
     width: calc(100% - 250px);
     border-bottom: 4px solid orange;
     box-sizing: border-box;
-    z-index: 100;
 }
 
 .sombra{
@@ -44,6 +43,7 @@ body{
     font-size: 18px;
     color: #b2b2b2;
     border-radius: 5px;
+    transition: margin-left 120ms;
 
 }
 .botao-menu:hover{
@@ -54,11 +54,12 @@ body{
 .titulo-site{
     display: block;
     float: left;
-    padding: 8px 20px;
+    padding: 7px 20px;
     color: #b2b2b2;
     font-family: Arial, sans-serif;
     font-size: 20px;
     letter-spacing: 2px;
+    overflow: hidden;
 }
 
 .menu-lateral{
@@ -89,7 +90,7 @@ body{
     display: block;
     padding: 10px 20px;
     font-size: 20px;
-    transition: background-color 200ms;
+    transition: background-color 120ms;
 }
 .paleta-menu li:hover{
     background-color: #505050;
@@ -108,9 +109,36 @@ body{
         width: 250px;
         margin-left: -300px;
         position: absolute;
-        transition: margin-left 250ms;
+        transition: margin-left 120ms;
+        
     }
 }
+.menu-accordeon{
+    float: left;
+    transform: translate(250px);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.accordeon-op span{
+    display: block;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    width: calc(100% - 10px);
+    padding: 13px 0px 13px 10px;
+    border-radius: 5px;
+    border-bottom-color: #a8a8a8;
+}
+.accordeon-op p{
+    margin: 0px;
+    display: block;
+    padding: 20px 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #c0c0c0;
+}
+
 .margem-zero{
     margin-left: 0px;
 }
