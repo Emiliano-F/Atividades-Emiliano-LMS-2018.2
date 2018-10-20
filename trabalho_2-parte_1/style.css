@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #f7f9fa;
+}
+.corpo{
+    width: 900px;
+    height: 100vh;
+    margin: 0px auto 0px auto;
+}
+.lateral-l{
+    float: left;
+    width: 35%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.lateral-r{
+    float: left;
+    width: 65%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.background{
+    background-color: pink;
+    background-image: url("./img/background.png");
+    background-size: 500px;
+    background-repeat: repeat repeat;
+    width: auto;
+    height: 100vh;
+    opacity: 0.16;
+
+}
+.header{
+    background-color: #bdbdbd;
+    float: left;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+}
