@@ -15,12 +15,14 @@ body{
     width: 35%;
     height: 100vh;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .lateral-r{
     float: left;
     width: 65%;
     height: 100vh;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .background{
     background-color: pink;
@@ -30,13 +32,12 @@ body{
     width: auto;
     height: 100vh;
     opacity: 0.16;
-
+    margin-top: 71px;
 }
 .header{
     background-color: #bdbdbd;
     float: left;
     width: 100%;
     height: 70px;
-    border-bottom: 1px solid grey;
-    border-right: 1px solid grey;
+    border: 1px solid #a1a1a1;
 }
