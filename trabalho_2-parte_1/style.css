@@ -5,6 +5,7 @@
 body{
     background-color: #f7f9fa;
 }
+
 .corpo{
     width: 900px;
     height: 100vh;
@@ -28,7 +29,7 @@ body{
     background-color: pink;
     background-image: url("./img/background.png");
     background-size: 500px;
-    background-repeat: repeat repeat;
+    background-repeat: repeat;
     width: auto;
     height: 100vh;
     opacity: 0.16;
@@ -38,6 +39,45 @@ body{
     background-color: #bdbdbd;
     float: left;
     width: 100%;
-    height: 70px;
     border: 1px solid #a1a1a1;
+    padding: 10px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+.usr-icon{
+    float: left;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    height:50px;
+    width: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.usr-img{
+    background-image: url("./img/icone.png");
+
+}
+.per-img{
+    background-image: url("./img/icone.png");
+}
+.user-name{
+    display: block;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: normal;
+}
+.usrs-column{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+.panel{
+    padding: 10px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+
 }
