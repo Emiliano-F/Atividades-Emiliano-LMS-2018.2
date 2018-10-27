@@ -5,7 +5,19 @@
 body{
     background-color: #f7f9fa;
 }
-
+/* estilos para o scroll */
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background-color: grey;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #5e5e5e;
+}
+/* ::-webkit-scrollbar-thumb:hover{
+    background-color: ;
+} */
 .corpo{
     width: 900px;
     height: 100vh;
@@ -46,8 +58,6 @@ body{
 }
 .user-icon{
     float: left;
-    /* background-size: 50px;
-    background-repeat: no-repeat; */
     height:50px;
     width: 50px;
     background-color: gray;
