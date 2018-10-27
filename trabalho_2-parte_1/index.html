@@ -7,41 +7,49 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Trabalho 2 - parte 1 - Emiliano Feitosa</title>
         <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" async></script>
     </head>
     <body>
         <div class="corpo">
+            
+            <!-- coluna da esquerda -->
             <div class="lateral-l">
-                <header class="header">
-                    <div class="usr-icon usr-img per-name">
-                    </div>
+                    <!-- cabeçalho da coluna -->
+                <header class="header panel">
+                    <img id="logged-user" class="user-icon" src="./img/icone.png">
                     <h1 class="user-name">Nome do Usuário</h1>
                 </header>
-                <aside class="usrs-column">
+                    <!-- logo abaixo do cabeçalho - corpo da coluna -->
+                <aside id="coluna" class="users-column">
                     
+                    <!-- lista dos grupos/contatos -->
                     <div class="contact-plane panel">
-                        <div class="usr-icon"></div>
+                        <img class="user-icon" src="./img/icone.png">
+                        <div class="user-name">Nome 01</div>
                     </div>
 
                     <div class="contact-plane panel">
-                        <div class="usr-icon"></div>
+                        <img class="user-icon" src="./img/icone.png">
+                        <div class="user-name">Nome 2</div>
                     </div>
 
                     <div class="contact-plane panel">
-                        <div class="usr-icon"></div>
+                        <img id="nome" class="user-icon" src="./img/icone.png">
+                        <div  class="user-name">Nome 3</div>
                     </div>
 
                 </aside>
             </div>
-
+            <!-- coluna da esquerda -->
             <div class="lateral-r">
-                <header class="header">
-                    <div class="usr-icon per-img">
-
-                    </div>
+                <!-- cabeçalho da coluna -->
+                <header class="header panel">
+                    <img id="chat-user" class="user-icon" src="./img/icone.png">
+                    <div class="user-name">Nome da conversa</div>
                 </header>
                 <div class="background"></div>
+
             </div>
         </div>
     </body>
-    <script src="./script.js"></script>
 </html>
