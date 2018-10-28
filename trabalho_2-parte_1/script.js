@@ -1,3 +1,4 @@
+//adicionar grupos dinamicamente
 var userId = 0;
 function addUser(nameUser) {
     let card, img, nome;
@@ -18,10 +19,15 @@ function addUser(nameUser) {
 
     card.appendChild(img);
     card.appendChild(nome);
+    //lance de adicionar
+    card.addEventListener("click", function () {
+        letsChat(card.id);
+    })
 
     document.querySelector("#coluna").appendChild(card); //seleção por id é mais segura - id unico no documento
 }
 
+//chamar a função que adiciona 3 vezes
 let cont = 1
 for (let i = 0; i < 3; i++){
     
@@ -29,23 +35,11 @@ for (let i = 0; i < 3; i++){
     cont++;
 }
 
+//mudar o chat
 function letsChat(id) {
     let chatUser = document.getElementById("chat-user");
     let user = document.getElementById(id);
-    let userName = document.createTextNode(user.children[1].innerHTML);
-    let userImg = document.createElement("img");
 
-//    userImg.src = user.children[0].src;
     chatUser.children[0].src = user.children[0].src;
-    chatUser.children[1].innerHTML = user.children[1].innerHTML;
-    
+    chatUser.children[1].innerHTML = user.children[1].innerHTML;    
 }
-
-letsChat("1");
-
-/* 
-let user = document.getElementById("1");
-let userImg = document.createElement("img");
-userImg.src = user.src;
-
-console.log(userImg); */

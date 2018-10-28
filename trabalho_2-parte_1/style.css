@@ -84,4 +84,12 @@ body{
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid rgb(214, 214, 214);
+    user-select: none;
+}
+.contact-plane{
+    cursor: pointer;
+    transition: background 150ms;
+}
+.contact-plane:hover{
+    background-color: rgb(231, 231, 231);
 }
