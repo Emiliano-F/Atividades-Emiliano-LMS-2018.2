@@ -1,36 +1,3 @@
-let url = "http://rest.learncode.academy/api/emiliano/grupos";
-
-function getItems() {
-    let getServer = new XMLHttpRequest();
-    getServer.onreadystatechange = function () {
-        if (this.readyState == 4) {
-            console.log("get");
-            let resBody = JSON.parse(this.responseText);
-            console.log(resBody);
-        }
-    }
-    getServer.open("GET", url, true);
-    getServer.send();    
-}
-
-
-//adicionar grupos dinamicamente
-function addGroup(name) {
-    let column = document.getElementById('coluna');
-    let grupo = document.createElement('div');
-    let img = document.createElement('img');
-    let grupoNome = document.createElement("div");
-
-    grupo.classList.add("contact-plane", "panel");
-    img.src = './img/icone.png';
-    img.classList.add('user-icon');
-    grupoNome.classList.add("user-name");
-    grupoNome.innerHTML = name;
-
-    grupo.appendChild(img);
-    grupo.appendChild(grupoNome);
-    column.appendChild(grupo);
-}
 let grupos = [
     {
         grupo: 'grupo da familia',
@@ -50,7 +17,7 @@ let grupos = [
         ]
     },
     {
-        grupo: "Paquera de DD",
+        grupo: "Galera de DD",
         menssagens: [
             {
                 usuario: "ismael",
@@ -58,11 +25,75 @@ let grupos = [
             },
             {
                 usuario: "igo",
-                texto:"Oi gatinho"
-            }
+                texto:"Oi bunitaum"
+            },
+            {
+                usuario: "ismael",
+                texto: "pra quando é o trabalho de lms?"
+            },
+            {
+                usuario: "igo",
+                texto: "é pra terça agora"
+            },
+            {usuario: "ismael", texto: "vish!"}
+            
         ]
     }
 ];
+
+
+let url = "http://localhost:3000/grupos";
+
+function getItems() {
+    let con = new XMLHttpRequest();
+    con.onreadystatechange = function () {
+        if (this.readyState == 4) {
+            console.log("get");
+            let resBody = JSON.parse(this.responseText);
+            console.log(resBody)
+            for (let i = 0; i < resBody.length; i++) {
+                console.log(resBody[i]);
+                
+            }
+        }
+    }
+    con.open("GET", url, true);
+    con.send();    
+}
+
+function sendItems(lista) {
+    let con = new XMLHttpRequest();
+    con.onreadystatechange = function () {
+        if (this.readyState == 4) {
+            console.log("post");
+            //getItems();
+        }
+    }
+    con.open("POST", url, true);
+    con.setRequestHeader("Content-type", "application/json");
+    con.send(JSON.stringify(lista));
+}
+//sendItems(grupos);
+getItems();
+
+
+//adicionar grupos dinamicamente
+function addGroup(name) {
+    let column = document.getElementById('coluna');
+    let grupo = document.createElement('div');
+    let img = document.createElement('img');
+    let grupoNome = document.createElement("div");
+
+    grupo.classList.add("contact-plane", "panel");
+    img.src = './img/icone.png';
+    img.classList.add('user-icon');
+    grupoNome.classList.add("user-name");
+    grupoNome.innerHTML = name;
+
+    grupo.appendChild(img);
+    grupo.appendChild(grupoNome);
+    column.appendChild(grupo);
+}
 
 //mudar o chat
 /* function letsChat(id) {

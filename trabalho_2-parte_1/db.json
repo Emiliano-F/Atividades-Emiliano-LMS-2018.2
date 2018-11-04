@@ -1,0 +1,44 @@
+{"grupos":[
+    {
+        "nomeGrupo": "grupo da familia",
+        "menssagens": [
+            {
+                "usuario": "joao",
+                "texto": "Oi td bem?"
+            },
+            {
+                "usuario": "victor",
+                "texto": "To de buenass"
+            },
+            {
+                "usuario": "joao",
+                "texto": "que bom"
+            }
+        ]
+    },
+    {
+        "nomeGrupo": "Galera de DD",
+        "menssagens": [
+            {
+                "usuario": "ismael",
+                "texto": "Oi bbs S2!"
+            },
+            {
+                "usuario": "igo",
+                "texto": "Oi bunitaum"
+            },
+            {
+                "usuario": "ismael",
+                "texto": "pra quando é o trabalho de lms?"
+            },
+            {
+                "usuario": "igo",
+                "texto": "é pra terça agora"
+            },
+            {
+                "usuario": "ismael",
+                "texto": "vish!"
+            }
+        ]
+    }
+]}
