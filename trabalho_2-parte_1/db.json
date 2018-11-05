@@ -1,5 +1,6 @@
 {"grupos":[
-    {
+    {   
+        "id": 1,
         "nomeGrupo": "grupo da familia",
         "menssagens": [
             {
@@ -16,7 +17,8 @@
             }
         ]
     },
-    {
+    {   
+        "id": 2,
         "nomeGrupo": "Galera de DD",
         "menssagens": [
             {

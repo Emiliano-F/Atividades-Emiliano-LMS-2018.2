@@ -15,9 +15,9 @@ body{
 ::-webkit-scrollbar-thumb{
     background-color: #5e5e5e;
 }
-/* ::-webkit-scrollbar-thumb:hover{
-    background-color: ;
-} */
+/* 
+=== painel dainterface ===
+*/
 .corpo{
     width: 900px;
     height: 100vh;
@@ -25,6 +25,9 @@ body{
     background-color: white;
     box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
 }
+/* 
+==== painel lateral esquerdo ===
+*/
 .lateral-l{
     float: left;
     width: 35%;
@@ -32,13 +35,7 @@ body{
     box-sizing: border-box;
     overflow: hidden;
 }
-.lateral-r{
-    float: left;
-    width: 65%;
-    height: 100vh;
-    box-sizing: border-box;
-    overflow: hidden;
-}
+
 .background{
     background-image: url("./img/background.png");
     background-size: 500px;
@@ -55,6 +52,9 @@ body{
     opacity: 0.16;
     z-index: 1;
 }
+/* 
+cabeçalho====
+*/
 .header{
     background-color: #dfdfdf;
     float: left;
@@ -63,6 +63,7 @@ body{
     padding: 10px;
     border-collapse: collapse;
     box-sizing: border-box;
+    /* header geral */
 }
 .user-icon{
     float: left;
@@ -101,6 +102,9 @@ body{
     font-weight: normal;
     cursor: pointer;
 }
+/* 
+coluna com os grupos====
+*/
 .users-column{
     margin: 0px;
     width: 100%;
@@ -116,13 +120,23 @@ body{
 }
 .contact-plane{
     cursor: pointer;
-    transition: background 150ms;
+    background-color: white;
+    transition: background 100ms;
+}
+.gp-sel{
+    background-color: rgb(136, 133, 133)
 }
 .contact-plane:hover{
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(240, 240, 240);
 }
-.chat{
-    width: 100%;
-    height: 100%;
-    background-color: green;
+/* 
+painel lateral direito====
+*/
+.lateral-r{
+    float: left;
+    width: 65%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
 }
+
