@@ -1,0 +1,6 @@
+{
+  "compras": [],
+  "users":[
+      {"id": 0, "nome": "Admin", "senha":"admin"}
+  ]
+}

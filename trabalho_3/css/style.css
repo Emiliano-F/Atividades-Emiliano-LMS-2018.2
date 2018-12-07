@@ -1,0 +1,37 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* VARIAVEIS */
+body {
+  background-color: #053232;
+}
+span {
+  color: #32dc32;
+}
+/* CORPO DA APLICAÇÃO */
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+/* CABEÇALHO DO SITE */
+.app-header {
+  height: 100px;
+}
+.loja-logo {
+  display: block;
+  width: 60px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid #32dc32;
+  background-color: grey;
+}
+.barra-busca {
+  height: 60px;
+}
+.btn {
+  background-color: grey;
+  border: 2px solid #32dc32;
+}
+.user-set {
+  color: white;
+}

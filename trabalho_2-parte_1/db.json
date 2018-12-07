@@ -1,46 +1,78 @@
-{"grupos":[
-    {   
-        "id": 1,
-        "nomeGrupo": "grupo da familia",
-        "menssagens": [
-            {
-                "usuario": "joao",
-                "texto": "Oi td bem?"
-            },
-            {
-                "usuario": "victor",
-                "texto": "To de buenass"
-            },
-            {
-                "usuario": "joao",
-                "texto": "que bom"
-            }
-        ]
-    },
-    {   
-        "id": 2,
-        "nomeGrupo": "Galera de DD",
-        "menssagens": [
-            {
-                "usuario": "ismael",
-                "texto": "Oi bbs S2!"
-            },
-            {
-                "usuario": "igo",
-                "texto": "Oi bunitaum"
-            },
-            {
-                "usuario": "ismael",
-                "texto": "pra quando é o trabalho de lms?"
-            },
-            {
-                "usuario": "igo",
-                "texto": "é pra terça agora"
-            },
-            {
-                "usuario": "ismael",
-                "texto": "vish!"
-            }
-        ]
-    }
-]}
+{
+    "grupos": [
+        {
+            "id": 1,
+            "nomeGrupo": "Grupo da Familia",
+            "menssagens": [
+                {
+                    "usuario": "joao",
+                    "texto": "Oi td bem?"
+                },
+                {
+                    "usuario": "victor",
+                    "texto": "To de buenass"
+                },
+                {
+                    "usuario": "joao",
+                    "texto": "que bom"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nomeGrupo": "Galera de DD 2017.1",
+            "menssagens": [
+                {
+                    "usuario": "ismael",
+                    "texto": "Fala cambada"
+                },
+                {
+                    "usuario": "igo",
+                    "texto": "Oi bunitaum"
+                },
+                {
+                    "usuario": "ismael",
+                    "texto": "pra quando é o trabalho de lms?"
+                },
+                {
+                    "usuario": "igo",
+                    "texto": "é pra terça agora"
+                },
+                {
+                    "usuario": "ismael",
+                    "texto": "vish!"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nomeGrupo": "Otarios de Quixada",
+            "menssagens": [
+                {
+                    "usuario": "André",
+                    "texto": "como ta o trabalho?!!"
+                },
+                {
+                    "usuario": "Pedro",
+                    "texto": "O Ismael ficou de fazer"
+                },
+                {
+                    "usuario": "Ismael",
+                    "texto": "tea with me"
+                },
+                {
+                    "usuario": "André",
+                    "texto": "até hoje eu não sei o que isso significa"
+                },
+                {
+                    "usuario": "ismael",
+                    "texto": "Tea = chá. with = com, me = mim/me"
+                },
+                {
+                    "usuario": "ismael",
+                    "texto": "'deixa comigo'"
+                }
+            ]
+        }
+    ]
+}

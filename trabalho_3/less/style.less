@@ -1,0 +1,43 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* VARIAVEIS */
+@corDeFundo :rgb(5, 50, 50);
+@sombraPadrao: 2px 2px 5px rgba(0px, 0px, 0px, 0.2px);
+@verdePadrao: rgb(50, 220, 50);
+
+body{
+    background-color: @corDeFundo ;
+}
+span{
+    color: @verdePadrao
+}
+
+/* CORPO DA APLICAÇÃO */
+.app{
+    width: 100vw;
+    height: 100vh;
+}
+/* CABEÇALHO DO SITE */
+.app-header{
+    height: 100px;
+}
+.loja-logo{
+    display: block;
+    width: 60px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid @verdePadrao;
+    background-color: grey;
+}
+.barra-busca{
+    height: 60px;
+}
+.btn{
+    background-color: grey;
+    border: 2px solid @verdePadrao;
+}
+.user-set{
+    color: white;
+    
+}
