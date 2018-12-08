@@ -39,6 +39,9 @@ span {
 }
 .user-img {
   font-size: 20px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
   background-color: #1e6e1e;
   padding: 10px;
   border-radius: 50%;
@@ -50,5 +53,14 @@ span {
   color: #32dc32;
   border-top: 1px solid rgba(50, 220, 50, 0.6);
   padding: 10px 0px 10px 0px;
+  width: 100%;
+}
+.prod-img {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  overflow: hidden;
+}
+.prod-img img {
   width: 100%;
 }
