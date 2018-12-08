@@ -23,15 +23,32 @@ span {
   padding: 5px;
   border-radius: 10px;
   border: 2px solid #32dc32;
-  background-color: grey;
+  background-color: #1e6e1e;
+  cursor: pointer;
 }
 .barra-busca {
   height: 60px;
 }
 .btn {
-  background-color: grey;
+  background-color: #1e6e1e;
   border: 2px solid #32dc32;
 }
 .user-set {
   color: white;
+  cursor: pointer;
+}
+.user-img {
+  font-size: 20px;
+  background-color: #1e6e1e;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #32dc32;
+}
+/* SEÇÃO DE PRODUTOS */
+.secao-prod {
+  font-size: 30px;
+  color: #32dc32;
+  border-top: 1px solid rgba(50, 220, 50, 0.6);
+  padding: 10px 0px 10px 0px;
+  width: 100%;
 }

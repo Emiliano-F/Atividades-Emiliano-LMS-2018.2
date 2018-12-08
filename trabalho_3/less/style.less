@@ -5,6 +5,7 @@
 @corDeFundo :rgb(5, 50, 50);
 @sombraPadrao: 2px 2px 5px rgba(0px, 0px, 0px, 0.2px);
 @verdePadrao: rgb(50, 220, 50);
+@verdeSecundario: rgb(30, 110, 30);
 
 body{
     background-color: @corDeFundo ;
@@ -28,16 +29,33 @@ span{
     padding: 5px;
     border-radius: 10px;
     border: 2px solid @verdePadrao;
-    background-color: grey;
+    background-color: @verdeSecundario;
+    cursor: pointer;
 }
 .barra-busca{
     height: 60px;
 }
 .btn{
-    background-color: grey;
+    background-color: @verdeSecundario;
     border: 2px solid @verdePadrao;
 }
 .user-set{
     color: white;
-    
+    cursor: pointer;
+}
+.user-img{
+    font-size: 20px;
+    background-color: @verdeSecundario;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid @verdePadrao;
+}
+
+/* SEÇÃO DE PRODUTOS */
+.secao-prod{
+    font-size: 30px;
+    color: @verdePadrao;
+    border-top: 1px solid rgba(50, 220, 50, 0.6px);
+    padding: 10px 0px 10px 0px;
+    width: 100%;
 }
